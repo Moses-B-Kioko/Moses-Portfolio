@@ -654,7 +654,7 @@ input {
 }
 
 .work__img {
-    border-radius: .5rem;
+    border-radius: 1.3rem;
     margin-bottom: var(--mb-1);
 }
 

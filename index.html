@@ -39,7 +39,7 @@
                                 <a href="#skills" class="nav__link">Skills</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#work" class="nav__link">Work</a>
+                                <a href="#work" class="nav__link">Portfolio</a>
                             </li>
                             <li class="nav__item">
                                 <a href="#services" class="nav__link">Services</a>
@@ -51,9 +51,9 @@
                     </div>
                 </div>
 
-                <div class="btn__share">
+               <!-- <div class="btn__share">
                     <i class="uil uil-share-alt social_share"></i>
-                </div>
+                </div> -->
 
                 <div class="nav__close" id="nav-close">
                     <i class="uil uil-times"></i>
@@ -67,27 +67,28 @@
         <section class="home" id="home">
             <div class="home__container container grid">
                 <div class="home__social">
-                    <span class="home__social-follow">Folow Me</span>
+                    <span class="home__social-follow">Follow Me</span>
                     <div class="home__social-links">
                         <a href="https://github.com/" target="_blank" class="home__social-link">
                             <i class="uil uil-github"></i>
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <a href="https://www.instagram.com/judahmoses/" target="_blank" class="home__social-link">
                             <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="https://www.twitter.com/" target="_blank" class="home__social-link">
-                            <i class="uil uil-twitter"></i>
+                        <a href="https://www.linkedin.com/in/moses-kioko-4166802bb" target="_blank" class="home__social-link">
+                            <i class="uil uil-linkedin-alt"></i>
                         </a>
+                        
                     </div>
                 </div>
 
-                <img src="images/Suit Profile.png" alt="" class="home__img">
-
+               
+                <img src="images/Suit Profile.png" alt="" class="home__img"> 
+                
                 <div class="home__data">
                     <h1 class="home__title">Hi, I'm Moses</h1>
-                    <h3 class="home__subtitle">Frontend developer</h3>
-                    <p class="home__description">High level exprience in web design and development knowledge,
-                        producng quality work.</p>
+                    <h3 class="home__subtitle">Welcome to my data science portfolio!</h3>
+                    <p class="home__description">You can find my work, thoughts, and ideas here.</p>
                     <a href="#about" class="button"><i class uil uil-user button__icon></i>
                     More About Me
                     </a>
@@ -120,6 +121,15 @@
                             <span class="info__subtitle">mbkioko@gmail.com</span>
                         </div>
                     </div>
+
+                    <div class="info__item">
+                        <i class="uil uil-linkedin-alt info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">LinkedIn</h3>
+                            <span class="info__subtitle">MOSES KIOKO</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -129,23 +139,77 @@
             <h2 data-heading="My Intro" class="section__title">About Me</h2>
 
             <div class="about__container container grid">
-                <img src="images/Suit Profile.png" alt="" class="about__img">
-
+                <div class="rotating-cube">
+                    <div class="cube">
+                        <div class="face front">Python</div>
+                        <div class="face back">R</div>
+                        <div class="face left">SQL</div>
+                        <div class="face right">Power BI</div>
+                        <div class="face top">Excel</div>
+                        <div class="face bottom">Colab</div>
+                    </div>
+                </div>
+                
+                
+                <style>
+                    .rotating-cube {
+                        perspective: 1000px;
+                        margin: auto;
+                        width: 150px;
+                        height: 150px;
+                    }
+                
+                    .cube {
+                        width: 150px;
+                        height: 150px;
+                        position: relative;
+                        transform-style: preserve-3d;
+                        animation: rotateCube 5s infinite linear;
+                    }
+                
+                    .face {
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        background: rgba(255, 255, 255, 0.4); /* Semi-transparent white */
+                        border: 2px solid rgba(200, 200, 200, 0.5); /* Light semi-transparent border */
+                        color: white;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                
+                    .front  { transform: rotateY(0deg) translateZ(75px); color: #F4B400; } /* Yellow */
+                    .back   { transform: rotateY(180deg) translateZ(75px); color: #4285F4; } /* Blue */
+                    .left   { transform: rotateY(-90deg) translateZ(75px); color: #34A853; } /* Green */
+                    .right  { transform: rotateY(90deg) translateZ(75px); color: #EA4335; } /* Red */
+                    .top    { transform: rotateX(90deg) translateZ(75px); color: #FF9900; } /* Orange */
+                    .bottom { transform: rotateX(-90deg) translateZ(75px); color: #00CFFF; } /* Cyan */
+                
+                    @keyframes rotateCube {
+                        0%   { transform: rotateX(0deg) rotateY(0deg); }
+                        100% { transform: rotateX(360deg) rotateY(360deg); }
+                    }
+                </style>
+                
+                
                 <div class="about__data">
                     <h3 class="about__heading">Hi, I'm Moses Kioko, Based in Kenya</h3>
-                    <p class="about__description" >Web developer, with extensive knowledge and years of expreience,
-                        working in web technologies and Ui / Ux design, delivering quality work.</p>
+                    <p class="about__description" >I am a data analyst driven by a love for storytelling. To me, words and data are the most influential tools for transforming the world.</p>
                         <div class="about__info">
                             <div class="about__box">
                                 <i class="uil uil-award about__icon"></i>
                                 <h3 class="about__title">Experience</h3>
-                                <span class="about__subtitle">2 + Years</span>
+                                <span class="about__subtitle">1 + Years</span>
                             </div>
 
                             <div class="about__box">
                                 <i class="uil uil-suitcase-alt about__icon"></i>
                                 <h3 class="about__title">Completed</h3>
-                                <span class="about__subtitle">10 + Projects</span>
+                                <span class="about__subtitle">Multiple Projects</span>
                             </div>
 
                             <div class="about__box">
@@ -172,23 +236,7 @@
                     </h3>
 
                     <div class="timeline">
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">Light International</h3>
-                            <p class="timeline__text">IGCSE</p>
-                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                            2015 - 2018
-                            </span>
-                        </div>
                         
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">SCLP Samaj</h3>
-                            <p class="timeline__text"> A-Levels</p>
-                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                            2018 - 2020
-                            </span>
-                        </div>
 
                         <div class="timeline__item">
                             <div class="circle__dot"></div>
@@ -211,8 +259,11 @@
                             <div class="circle__dot"></div>
                             <h3 class="timeline__title">@iLab Africa</h3>
                             <p class="timeline__text">Data Analyst</p>
+                            <span class="work__button">Click for more
+                                <i class="uil uil-arrow-right work__button-icon"></i>
+                            </span>
                             <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                            2024 - Present
+                            Feb - Sept 2024
                             </span>
                         </div>
                     </div>
@@ -230,8 +281,8 @@
                         <i class="uil uil-brackets-curly skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__title">Frontend Developer</h1>
-                            <span class="skills__subtitle">More than 2 years</span>
+                            <h1 class="skills__title">Data Analysis</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
                         </div>
                         <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -240,8 +291,8 @@
                         <i class="uil uil-swatchbook skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__title">U1 / UX design</h1>
-                            <span class="skills__subtitle">More than 2 years</span>
+                            <h1 class="skills__title">Visualization</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
                         </div>
                         <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -250,8 +301,8 @@
                         <i class="uil uil-server-network skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__title">Backend Developer</h1>
-                            <span class="skills__subtitle">More than 2 years</span>
+                            <h1 class="skills__title">Machine Learning</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
                         </div>
                         <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
@@ -262,7 +313,7 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
+                                    <h3 class="skills__name">Descriptive Analysis</h3>
                                     <span class="skills__number">90%</span>
                                 </div>
 
@@ -273,7 +324,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
+                                    <h3 class="skills__name">Diagnosis Analysis</h3>
                                     <span class="skills__number">80%</span>
                                 </div>
 
@@ -284,7 +335,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
+                                    <h3 class="skills__name">Prescriptive Analysis</h3>
                                     <span class="skills__number">60%</span>
                                 </div>
 
@@ -295,7 +346,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">React</h3>
+                                    <h3 class="skills__name">Predictive Analysis</h3>
                                     <span class="skills__number">85%</span>
                                 </div>
 
@@ -310,7 +361,7 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
+                                    <h3 class="skills__name">Power BI</h3>
                                     <span class="skills__number">90%</span>
                                 </div>
 
@@ -321,7 +372,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Power BI</h3>
+                                    <h3 class="skills__name">Microsoft Excel</h3>
                                     <span class="skills__number">80%</span>
                                 </div>
 
@@ -332,7 +383,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Photoshop</h3>
+                                    <h3 class="skills__name">MicroStrategy Workstation</h3>
                                     <span class="skills__number">60%</span>
                                 </div>
 
@@ -348,7 +399,7 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">PHP</h3>
+                                    <h3 class="skills__name">Python</h3>
                                     <span class="skills__number">90%</span>
                                 </div>
 
@@ -359,7 +410,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">MySQL</h3>
+                                    <h3 class="skills__name">R</h3>
                                     <span class="skills__number">80%</span>
                                 </div>
 
@@ -370,7 +421,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Firebase</h3>
+                                    <h3 class="skills__name">MySQL</h3>
                                     <span class="skills__number">60%</span>
                                 </div>
 
@@ -379,7 +430,7 @@
                                 </div>
                             </div>
 
-                            <div class="skills__data">
+                           <!-- <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Figma</h3>
                                     <span class="skills__number">85%</span>
@@ -387,7 +438,7 @@
 
                                 <div class="skills__bar">
                                     <span class="skills__percentage" style="width: 85%;"></span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -395,21 +446,40 @@
             </div>
         </section>
 
-        <!--=========== Work ========-->
+        <!--=========== Portfolio ========-->
         <section class="work section" id="work">
-            <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
+            <h2 data-heading="My Portfolio" class="section__title">Portfolio</h2>
 
-            <div class="work__filters">
+            <!--<div class="work__filters">
                 <span class="work__item active-work" data-filter="all">All</span>
                 <span class="work__item" data-filter=".web">Web</span>
                 <span class="work__item" data-filter=".app">App</span>
-            </div>
+            </div>-->
 
             <div class="work__container container grid">
                 <div class="work__card mix web">
-                    <img src="images/E-commerce.png" alt="" class="work__img">
-                    <h3 class="work__title">Web Design</h3>
-                    <span class="work__button">development
+                    <img src="images/Bookery.png" alt="" class="work__img">
+                    <h3 class="work__title">The Bookery</h3>
+                    <span class="work__button">View
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">This is a second hand bookstore</h3>
+                        <p class="details__description">TheBookery is a Laravel-based web application that streamlines the buying and selling of new and used books by providing features like dynamic shop filters, cart management, secure checkout, shipping management, and insightful visualizations, all integrated with modern frontend technologies for an enhanced user experience.</p>
+                            <ul class="details__info">
+                                <li>Created - <span>August 2024 - Nov 2024</span></li>
+                                <li>Technologies - <span>Laravel Boostrap MySQL</span></li>
+                                <li>Role - <span>Fullstack Developer</span></li>
+                                <li>View - <span><a href="https://github.com/Moses-B-Kioko/The-Bookery">github repository</a></span></li>
+
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="images/Premier League.png" alt="" class="work__img">
+                    <h3 class="work__title">Premier League Match Winner Predictor</h3>
+                    <span class="work__button">View
                         <i class="uil uil-arrow-right work__button-icon"></i>
                     </span>
                     <div class="portfolio__item-details">
@@ -420,40 +490,40 @@
                                 <li>Created - <span>4 July 2022</span></li>
                                 <li>Technologies - <span>html css</span></li>
                                 <li>Role - <span>frontend</span></li>
-                                <li>View - <span><a href="https://github.com/Kirathi/html-labs-MosesKioko01">github repository</a></span></li>
+                                <li>View - <span><a href="https://github.com/Moses-B-Kioko/Premier-League-Match-Predictor">github repository</a></span></li>
 
                             </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix app">
-                    <img src="images/Health.png" alt="" class="work__img">
-                    <h3 class="work__title">App Design</h3>
-                    <span class="work__button">Demo
+                    <img src="images/Credit.png" alt="" class="work__img">
+                    <h3 class="work__title">Credit Card Fraud Detection</h3>
+                    <span class="work__button">View
                         <i class="uil uil-arrow-right work__button-icon"></i>
                     </span>
                     <div class="portfolio__item-details">
-                        <h3 class="details__title">A Health Care Mobile Application.</h3>
+                        <h3 class="details__title">Credit Card Fraud Detection</h3>
                         <p class="details__description">The following is a health care mobile application that enables you to be 
                             able to book an appointmment with a doctor, see lab results and to be able to buy medicine .</p>
                             <ul class="details__info">
                                 <li>Created - <span>20 Nov 2023</span></li>
                                 <li>Technologies - <span>Java </span></li>
                                 <li>Role - <span>frontend and backend</span></li>
-                                <li>View - <span><a href="https://github.com/Kirathi/api-lab-work-MosesKioko01">github repository</a></span></li>
+                                <li>View - <span><a href="https://github.com/Moses-B-Kioko/The-bookery-web-application.git">github repository</a></span></li>
 
                             </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix app">
-                    <img src="images/Recipe App.png" alt="" class="work__img">
-                    <h3 class="work__title">App Design</h3>
-                    <span class="work__button">Demo
+                    <img src="images/Google.png" alt="" class="work__img">
+                    <h3 class="work__title">Profitable App Profiles for App Store and Google Play Markets</h3>
+                    <span class="work__button">View
                         <i class="uil uil-arrow-right work__button-icon"></i>
                     </span>
                     <div class="portfolio__item-details">
-                        <h3 class="details__title">Recipe Application</h3>
+                        <h3 class="details__title">Profitable App Profiles for App Store and Google Play Markets</h3>
                         <p class="details__description">This is a mobile recipe application that shows you a wide variety of 
                             recipes you can use to make many different dishes.</p>
                             <ul class="details__info">
@@ -657,6 +727,15 @@
             <div class="contact content">
                 <div class="contact__info">
                     <div class="contact__card">
+                        <i class="uil uil-linkedin-alt contact__card-icon"></i>
+                        <h3 class="contact_card-title">LinkedIn</h3>
+                        <span class="contact__card-data">MOSES KIOKO</span>
+                        <span class="contact__button">
+                            Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                        </span>
+                    </div>
+
+                    <div class="contact__card">
                         <i class="uil uil-envelope-edit contact__card-icon"></i>
                         <h3 class="contact_card-title">Email</h3>
                         <span class="contact__card-data">mbkioko@gmail.com</span>
@@ -722,7 +801,7 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Moses</h1>
-                    <span class="footer__subtitle">Frontend developer</span>
+                    <span class="footer__subtitle">Data Analyst</span>
                 </div>
 
                 <ul class="footer__links">
@@ -730,7 +809,7 @@
                         <a href="#services" class="footer__link">Services</a>
                     </li>
                     <li>
-                        <a href="#work" class="footer__link">Work</a>
+                        <a href="#work" class="footer__link">Portfolio</a>
                     </li>
                     <li>
                         <a href="#contact" class="footer__link">Contact</a>
